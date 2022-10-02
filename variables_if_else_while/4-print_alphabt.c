@@ -10,12 +10,16 @@ int main(void)
 {
 	char ch = 'a';
 
-	for (; ch < 'e'; ch++)
-		putchar(ch);
-	for (ch = 'f'; ch < 'q'; ch++)
-		putchar(ch);
-	for (ch = 'r'; ch <= 'z'; ch++)
-		putchar(ch);
+	for (; ch <= 'z'; ch++)
+	{
+		if (ch != 'e')
+		{
+			if (ch != 'q')
+			{
+			putchar(ch);
+			}
+		}
+	}
 	putchar('\n');
 	return (0);
 }

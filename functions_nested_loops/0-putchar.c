@@ -4,8 +4,6 @@
  *Return: zero at all times
  */
 
-void _putchar(char c);
-
 int main(void)
 {
 	_putchar('_');

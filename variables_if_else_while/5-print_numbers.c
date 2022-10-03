@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- *main - pprints every letter of the alphabet using only the function putchar
+ *main - function to print all numbers between 0 and 9
  *Return: zero at all times
  */
 
 int main(void)
 {
-	char ch = 'a';
+	char ch = 48;
 
-	for (; ch <= 'z'; ch++)
+	for (; ch <= 57; ch++)
 		putchar(ch);
 	putchar('\n');
 	return (0);

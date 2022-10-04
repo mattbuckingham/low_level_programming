@@ -20,6 +20,7 @@ void print_alphabet_x10(void)
 			ch++;
 		}
 		x++;
+		ch = 'a';
 		_putchar('\n');
 	}
 

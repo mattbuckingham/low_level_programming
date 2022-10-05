@@ -1,0 +1,13 @@
+#include "main.h"
+/**
+ *
+ *
+ *
+ */
+
+int _abs(int)
+{
+	int abs;
+
+	return(abs);
+}

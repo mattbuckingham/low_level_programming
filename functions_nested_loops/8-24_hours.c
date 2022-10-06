@@ -22,6 +22,7 @@ void jack_bauer(void)
 			d = h % 10;
 			_putchar('0' + d);
 			d = m / 10;
+			putchar(':');
 			_putchar('0' + d);
 			d = m % 10;
 			_putchar('0' + d);

@@ -19,7 +19,7 @@ void print_to_98(int n)
 			}
 			if (n == 98)
 			{
-				printf("\n")
+				printf("\n");
 			}
 			n = n - 1;
 		}

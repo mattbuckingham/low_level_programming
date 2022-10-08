@@ -33,5 +33,5 @@ void print_to_98(int n)
 			n = n + 1;
 		}
 	}
-	printf('\n'); 
+	_putchar('\n');
 }

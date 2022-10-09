@@ -5,7 +5,7 @@
  *
  */
 
-void main(void)
+int main(void)
 {
 	int n;
 
@@ -27,4 +27,5 @@ void main(void)
 		n = n + 1;
 		printf(" ");
 	}
+	return (0);
 }

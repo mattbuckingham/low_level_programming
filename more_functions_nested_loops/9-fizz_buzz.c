@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  *main - see fizz buzz challenge
- *
+ *Return: zero
  */
 
 int main(void)
@@ -27,5 +27,6 @@ int main(void)
 		n = n + 1;
 		printf(" ");
 	}
+	printf('\n');
 	return (0);
 }

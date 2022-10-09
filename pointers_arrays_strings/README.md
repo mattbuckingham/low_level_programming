@@ -1,0 +1,1 @@
+Repo of projects directly relating to pointers, produced for assesment purposes for Holberton School

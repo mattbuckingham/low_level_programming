@@ -3,7 +3,7 @@
  * print_numbers - function that prints all numbers between 0 and 14
  */
 
-void print_numbers(void)
+void more_numbers(void)
 {
 	int x;
 

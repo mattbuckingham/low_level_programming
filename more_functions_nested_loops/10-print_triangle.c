@@ -18,9 +18,10 @@ void print_triangle(int size)
 	{
 		while (h <= size)
 		{
+			sy = h - s;
 			while (s <= size)
 			{
-				sy = h - s;
+
 				if (s <= sy)
 				{
 					_putchar(' ');

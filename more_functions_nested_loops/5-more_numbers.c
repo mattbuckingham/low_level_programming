@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_numbers - function that prints all numbers between 0 and 14
+ * more_numbers - function that prints all numbers between 0 and 14
  */
 
 void more_numbers(void)
 {
 	int x;
-	inc count;
+	int count;
 
 	x = 0;
 	count = 0;

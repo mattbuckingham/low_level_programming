@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - checks to see if a char is a digit
- * @c: a char to check
- * Return: a 1 if digit or a 0 if not
+ * print_numbers - function that prints all numbers between 0 and 9
  */
 
 void print_numbers(void)
@@ -12,7 +10,8 @@ void print_numbers(void)
 	x = 0;
 	while (x < 10)
 	{
-		_putchar(x);
+		_putchar('0' + x);
 		x = x + 1;
 	}
+	_putchar('\n');
 }

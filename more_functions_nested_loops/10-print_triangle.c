@@ -18,7 +18,7 @@ void print_triangle(int size)
 	{
 		while (h <= size)
 		{
-			sy = size - s;
+			sy = size - h;
 			while (s <= size)
 			{
 

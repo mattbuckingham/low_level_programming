@@ -5,7 +5,7 @@
  * @size : the length of triangle to be printed
  */
 
-void print_diagonal(int size)
+void print_triangle(int size)
 {
 	int h;
 	int s;

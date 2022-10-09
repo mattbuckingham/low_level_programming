@@ -27,6 +27,6 @@ int main(void)
 		n = n + 1;
 		printf(" ");
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }

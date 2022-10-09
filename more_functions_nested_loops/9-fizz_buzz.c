@@ -25,7 +25,10 @@ int main(void)
 			printf("%d", n);
 		}
 		n = n + 1;
+		if (n < 100)
+		{
 		printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);

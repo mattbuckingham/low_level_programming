@@ -10,8 +10,8 @@ void print_diagonal(int n)
 	int i;
 	int s;
 
-	i = 1;
-	s = 1;
+	i = 0;
+	s = 0;
 	if (n > 0)
 	{
 		while (i < n)
@@ -28,5 +28,8 @@ void print_diagonal(int n)
 		}
 		s = 1;
 	}
+	else
+	{
 	_putchar('\n');
+	}
 }

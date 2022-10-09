@@ -25,7 +25,7 @@ int main(void)
 			printf("%d", n);
 		}
 		n = n + 1;
-		if (n < 100)
+		if (n < 101)
 		{
 		printf(" ");
 		}

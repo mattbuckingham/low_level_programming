@@ -9,13 +9,16 @@ all: $(OBJ)
 	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
 .PHONY: clean
-clean: $(RM) *~ $(NAME)
+clean:
+	$(RM) *~ $(NAME)
 
 .PHONY: oclean
-oclean: $(RM) *.o
+oclean:
+	$(RM) *.o
 
 .PHONY: fclean
-fclean:$(RM) *~ $(NAME) $(OBJ)
+fclean:
+	$(RM) *~ $(NAME) $(OBJ)
 
 .PHNOY: re
 re: oclean all

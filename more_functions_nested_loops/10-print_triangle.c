@@ -9,17 +9,19 @@ void print_triangle(int size)
 {
 	int h;
 	int s;
+	int sy
 
 	h = 1;
 	s = 1;
 
-	if ( size > 0)
+	if (size > 0)
 	{
 		while (h <= size)
 		{
 			while (s <= size)
 			{
-				if (s <= size)
+				sy = h - s;
+				if (s <= sy)
 				{
 					_putchar(' ');
 				}

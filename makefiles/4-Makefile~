@@ -3,9 +3,10 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
-	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
 .PHONY: clean
 clean: $(RM) *~ $(NAME)
@@ -17,4 +18,4 @@ oclean: $(RM) *.o
 fclean:$(RM) *~ $(NAME) $(OBJ)
 
 .PHNOY: re
-re: oclean all
+re: oclean $(CC) $(SRC) -o ($NAME)

@@ -1,0 +1,1 @@
+Repo of projects directly relating to nested loops in c, produced for assesment purposes for Holberton School

@@ -12,9 +12,9 @@ void main(void)
 	n = 0;
 	while (n <= 100)
 	{
-		if (n % 3 == o)
+		if (n % 3 == 0)
 		{
-			printf('Fizz');
+			printf("Fizz");
 		}
 		if (n % 5 == 0)
 		{

@@ -9,7 +9,7 @@ void print_triangle(int size)
 {
 	int h;
 	int s;
-	int sy
+	int sy;
 
 	h = 1;
 	s = 1;

@@ -32,6 +32,7 @@ void print_triangle(int size)
 				}
 				s = s + 1;
 			}
+			s = 1;
 			_putchar('\n');
 			h = h + 1;
 		}

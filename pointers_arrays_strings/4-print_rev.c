@@ -19,7 +19,7 @@ void print_rev(char *s)
 	s = s - 1;
 
 	/* print the string from last to first */
-	while (c > 0)
+	while (s > 0)
 	{
 		_putchar(*s);
 		s = s - 1;

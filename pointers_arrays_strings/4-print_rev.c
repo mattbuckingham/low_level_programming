@@ -9,8 +9,7 @@ void print_rev(char *s)
 
 	i = 0;
 
-	/** this loop finds the length of the string, which is where the pointer 
-	 *will now point*/
+	/** this loop finds the length of the string*/
 	while (*s != '\0')
 	{
 		s = s + 1;

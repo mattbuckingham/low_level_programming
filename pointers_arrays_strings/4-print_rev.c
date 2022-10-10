@@ -6,7 +6,7 @@
 void print_rev(char *s)
 {
 	int c;
-	int *i;
+	char *i;
 
 	i = s;
 	/** this loop finds the length of the string, which is now c*/
@@ -18,7 +18,7 @@ void print_rev(char *s)
 
 	while (c > 0)
 	{
-		_putchar(*(s+c));
+		_putchar(*(s + c));
 		c = c - 1;
 	}
 

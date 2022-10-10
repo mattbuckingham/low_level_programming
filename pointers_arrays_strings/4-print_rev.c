@@ -7,7 +7,7 @@ void print_rev(char *s)
 {
 	int i;
 
-	c = 0;
+	i = 0;
 	/** this loop finds the length of the string, which is now c*/
 	while (*s != '\0')
 	{

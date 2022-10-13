@@ -13,9 +13,16 @@ void print_array(int *a, int n)
 	i = 0;
 	while (i < n)
 	{
+/* this statement is to stop printing a comma on the last output*/
+		if (i == (n - 1))
+		{
+			printf("%d", a[i]);
+			_putchar('\n');
+		}
+		else
+		{
 		printf("%d, ", a[i]);
 		i = i + 1;
+		}
 	}
-	
-	_putchar('\n');
 }

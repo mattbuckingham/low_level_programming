@@ -15,8 +15,8 @@ void puts_half(char *str)
 	{
 		len = len + 1;
 	}
-	/*jump back off the null char*/
-	len = len - 1;
+	/*jump back off the null char
+	  len = len - 1;*/
 
 	/*set i to be the start of where we need to print from*/
 

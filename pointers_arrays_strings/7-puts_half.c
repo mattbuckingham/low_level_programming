@@ -16,14 +16,14 @@ void puts_half(char *str)
 		len = len + 1;
 	}
 	/*jump back off the null char
-	  len = len - 1;*/
+	 * len = len - 1;*/
 
 	/*set i to be the start of where we need to print from*/
 
-	i = (len - 1) / 2;
+	i = len / 2;
 
 	/*print every other char */
-	while (i <= len)
+	while (i < len)
 	{
 		_putchar(str[i]);
 		i = i + 1;

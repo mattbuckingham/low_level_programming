@@ -3,6 +3,7 @@
  *_srtcpy - a function to copy a string from one location to another
  * @dest: a location to copy a string to
  * @src: a string to be copied
+ * Return: the destination address
  */
 
 char *_strcpy(char *dest, char *src)
@@ -13,7 +14,7 @@ char *_strcpy(char *dest, char *src)
 	i = 0;
 	len = _strlen(src);
 
-	while (i > 0)
+	while (i > len)
 	{
 		dest[i] = src[i];
 		i = i + 1;

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <std.io>
 /**
  * print_array - prints the first n elements of an array
  * @a: an array to be printed

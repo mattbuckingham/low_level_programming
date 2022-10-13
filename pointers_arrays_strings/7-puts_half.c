@@ -20,7 +20,7 @@ void puts_half(char *str)
 
 	/*set i to be the start of where we need to print from*/
 
-	i = len / 2;
+	i = (len - 1 / 2) + 1;
 
 	/*print every other char */
 	while (i < len)

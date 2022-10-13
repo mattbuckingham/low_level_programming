@@ -3,7 +3,7 @@
 /**
  * print_array - prints the first n elements of an array
  * @a: an array to be printed
- * @n an int of how many elements to be printed
+ * @n: an int of how many elements to be printed
  */
 
 void print_array(int *a, int n)
@@ -16,5 +16,6 @@ void print_array(int *a, int n)
 		printf("%d, ", a[i]);
 		i = i + 1;
 	}
-	/*_putchar('\n');*/
+	
+	_putchar('\n');
 }

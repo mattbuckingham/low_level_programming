@@ -7,7 +7,7 @@
 
 char *leet(char *str)
 {
-	char upLet[], lowLet[], num[];
+	char upLet[5], lowLet[5], num[5];
 	int i, k;
 
 	upLet = "AEOTL";
@@ -21,7 +21,7 @@ char *leet(char *str)
 	{
 		while (lowLet[k] != '\0')
 		{
-			if (str[i] == lowLet[k] || sri[i] == upLet[k])
+			if (str[i] == lowLet[k] || str[i] == upLet[k])
 			{
 				str[i] = num[k];
 				k = k + 1;

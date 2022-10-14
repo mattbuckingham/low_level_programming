@@ -14,7 +14,7 @@ int _strcmp(char *s1, char *s2)
 	i = 0;
 	res = 0;
 
-/*iterare until an unequal element prior to the first nullchar of either string*/
+/*find first unequal element prior to the first nullchar of either string*/
 	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 	{
 		i = i + 1;

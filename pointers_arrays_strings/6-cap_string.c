@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * string_toupper - changes all lowercase letters of a string to uppercase
- * @arr: a string
- * Return: void
+ *cap_string - capitalise the first letter of every word of a string
+ * @arr: a string to capitalise
+ * Return: arr
  */
 
-char *string_toupper(char *arr)
+char *cap_string(char *arr)
 {
 	int i;
 	int inc;

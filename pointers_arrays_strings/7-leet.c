@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  *leet -function that encodes a string into 1337
@@ -22,10 +23,11 @@ char *leet(char *str)
 			if (str[i] == lowLet[k] || str[i] == upLet[k])
 			{
 				str[i] = num[k];
-				k = k + 1;
 			}
+			k = k + 1;
 		}
 		i = i + 1;
+		k = 0;
 	}
 	return (str);
 }

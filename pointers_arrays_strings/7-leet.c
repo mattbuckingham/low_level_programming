@@ -7,12 +7,10 @@
 
 char *leet(char *str)
 {
-	char upLet[5], lowLet[5], num[5];
+	char upLet[5] = "AEOTL";
+	char lowLet[5] = "aeotl";
+	char num[5] = "43071";
 	int i, k;
-
-	upLet = "AEOTL";
-	lowLet = "aeotl";
-	num = "43071";
 
 	i = 0;
 	k = 0;

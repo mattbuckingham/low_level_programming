@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- *_memset - The _memset() function fills the first n bytes of the memory area 
+ * _memset - fills the first n bytes of the memory area
  * pointed to by s with the constant byte b
  * @s: target array
  * @b: byte to be written

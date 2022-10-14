@@ -14,10 +14,10 @@ char *leet(char *str)
 	int i, k;
 
 	i = 0;
-	k = 0;
 
 	while (str[i] != '\0')
 	{
+		k = 0;
 		while (lowLet[k] != '\0')
 		{
 			if (str[i] == lowLet[k] || str[i] == upLet[k])
@@ -27,7 +27,6 @@ char *leet(char *str)
 			k = k + 1;
 		}
 		i = i + 1;
-		k = 0;
 	}
 	return (str);
 }

@@ -21,4 +21,5 @@ char *string_toupper(char *arr)
 		}
 		i = i + 1;
 	}
+	return (arr);
 }

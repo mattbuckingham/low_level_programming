@@ -29,7 +29,7 @@ char *cap_string(char *arr)
 				/* check to see isf previous char was a seperator*/
 				while (sep[k] != '\0')
 				{
-					if ( sep[k] == arr[(i-1)])
+					if ( sep[k] == arr[(i - 1)])
 						arr[i] = arr[i] + inc;
 					k = k + 1;
 				}

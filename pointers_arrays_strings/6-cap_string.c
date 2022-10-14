@@ -23,11 +23,11 @@ char *cap_string(char *arr)
 			{
 				arr[i] = arr[i] + inc;
 			}
-			else( arr[(i - 1)] > 'z' && arr[(i - 1)] < 'A')
+			else if (arr[(i - 1)] > 'z' && arr[(i - 1)] < 'A')
 			{
 				arr[i] = arr[i] + inc;
 			}
-			else ( arr[(i - 1)] > 'Z')
+			else if (arr[(i - 1)] > 'Z')
 			{
 				arr[i] = arr[i] + inc;
 			}

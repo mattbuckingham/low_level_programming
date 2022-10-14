@@ -10,6 +10,7 @@ char *string_toupper(char *arr)
 	int i;
 	int inc;
 
+	i = 0;
 /*work out the size of the difference in ascii value between lower and upper */
 	inc = 'A' - 'a';
 

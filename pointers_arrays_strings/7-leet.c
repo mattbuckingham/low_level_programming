@@ -8,17 +8,16 @@
 
 char *leet(char *str)
 {
-	char upLet[5] = "AEOTL";
-	char lowLet[5] = "aeotl";
-	char num[5] = "43071";
+	char upLet[] = "AEOTL";
+	char lowLet[] = "aeotl";
+	char num[] = "43071";
 	int i, k;
 
 	i = 0;
-
 	while (str[i] != '\0')
 	{
 		k = 0;
-		while (lowLet[k] != '\0')
+		while (k <= 4)
 		{
 			if (str[i] == lowLet[k] || str[i] == upLet[k])
 			{

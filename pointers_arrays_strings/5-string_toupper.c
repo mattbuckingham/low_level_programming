@@ -17,7 +17,7 @@ char *string_toupper(char *arr)
 	{
 		if (arr[i] > 'a' && arr[i] < 'z')
 		{
-			arr[i] = arr + inc;
+			arr[i] = arr[i] + inc;
 		}
 		i = i + 1;
 	}

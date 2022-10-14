@@ -19,7 +19,7 @@ char *cap_string(char *arr)
 /*this beast of a statement checks to see if the previous char was non-alpha*/
 		if ((arr[i] >= 'a' && arr[i] <= 'z')
 		{
-			if ((arr[(i - 1)] < 'a')
+			if (arr[(i - 1)] < 'a')
 			{
 				arr[i] = arr[i] + inc;
 			}
@@ -27,7 +27,7 @@ char *cap_string(char *arr)
 			{
 				arr[i] = arr[i] + inc;
 			}
-			else ( arr[(i - 1)] > 'Z'))
+			else ( arr[(i - 1)] > 'Z')
 			{
 				arr[i] = arr[i] + inc;
 			}

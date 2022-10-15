@@ -31,9 +31,9 @@ void print_diagsums(int *a, int size)
 	/*calculate the second diagonal, stored in t2*/
 	while (i < size)
 	{
+		k = k - 1;
 		t2 = t2 + a[(i * size) + k];
 		i = i + 1;
-		k = k - 1;
 	}
 
 	/*print our results*/

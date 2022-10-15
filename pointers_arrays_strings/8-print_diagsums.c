@@ -37,5 +37,5 @@ void print_diagsums(int *a, int size)
 	}
 
 	/*print our results*/
-	printf("%d, %d\n", t1, t2)
+	printf("%d, %d\n", t1, t2);
 }

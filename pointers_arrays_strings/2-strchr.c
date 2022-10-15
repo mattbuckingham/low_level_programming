@@ -16,12 +16,12 @@ char *_strchr(char *s, char c)
 		i = i + 1;
 	}
 /*return null if we found nothing*/
-	if (s[i] == '\0')
+	if (s[i] == '\0' || s[i] == c)
 	{
 		return (&s[i]);
 	}
 	else
 	{
-		return (&s[i]);
+		return (0);
 	}
 }

@@ -18,13 +18,16 @@ unsigned int _strspn(char *s, char *accept)
 	while (s[i] != '\0')
 	{
 		k = 0;
-		while (accept[k] != '\0')
+		if (s[i] >= 'a' && s[i] <= 'z' || s[i] >= 'A' && s[i] <= 'Z')
 		{
-			if (s[i] == accept[k])
+			while (accept[k] != '\0')
 			{
-				n = n + 1;
+				if (s[i] == accept[k])
+				{
+					n = n + 1;
+				}
+				k = k + 1;
 			}
-			k = k + 1;
 		}
 		i = i + 1;
 	}

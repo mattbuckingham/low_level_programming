@@ -23,7 +23,7 @@ char *_strpbrk(char *s, char *accept)
 			}
 			else
 			{
-				k = k + 1
+				k = k + 1;
 			}
 		}
 		i = i + 1;

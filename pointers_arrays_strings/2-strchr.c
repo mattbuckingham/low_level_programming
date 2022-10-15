@@ -16,9 +16,9 @@ char *_strchr(char *s, char c)
 		i = i + 1;
 	}
 /*return null if we found nothing*/
-	if ( c != '\0' && s[i] == c)
+	if (s[i] != c && c != '\0')
 	{
-		return (&s[i]);
+		return (0);
 	}
 	else
 	{

@@ -15,20 +15,18 @@ unsigned int _strspn(char *s, char *accept)
 	k = 0;
 	n = 0;
 
-	while (s[i] != '\0')
+	while ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
 	{
 		k = 0;
-		if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+		while (accept[k] != '\0')
 		{
-			while (accept[k] != '\0')
+			if (s[i] == accept[k])
 			{
-				if (s[i] == accept[k])
-				{
-					n = n + 1;
-				}
-				k = k + 1;
+				n = n + 1;
 			}
+			k = k + 1;
 		}
+
 		i = i + 1;
 	}
 

@@ -7,21 +7,16 @@
  */
 int _strlen_recursion(char *s)
 {
+	int c;
 
+	c = 0;
 
-
-	
----------------------------
-//I don't think any of this works because none of hte recurred functions actually return anything
-	char *i;
-
-	i = s;
-	if (*s == '\0')
+	if (*s = '\0')
 	{
-		return(int(s - i));
+		return(c);
 	}
 	else
 	{
-		_strlen_recursion(s - 1);
+		c = _strlen_recursion(s + 1)
 	}
 }

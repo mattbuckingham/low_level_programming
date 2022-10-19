@@ -7,6 +7,12 @@
  */
 int _strlen_recursion(char *s)
 {
+
+
+
+	
+---------------------------
+//I don't think any of this works because none of hte recurred functions actually return anything
 	char *i;
 
 	i = s;

@@ -3,7 +3,7 @@
 /**
  * _sqrt_rec - returns the natural square root of a number
  * @n: a number with a square root
- * @j: the square root of n
+ * @r: the square root of n
  * Return: the square root of n
  */
 int _sqrt_rec(int n, int r)
@@ -34,5 +34,5 @@ int _sqrt_rec(int n, int r)
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt_rec(n, 2));
+	return (_sqrt_rec(n, 1));
 }

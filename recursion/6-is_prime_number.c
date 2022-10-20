@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_prime_number - returns 1 if the input integer is a prime number, 
+ * is_prime_number - returns 1 if the input integer is a prime number
  * @n: a prime number
  * @i: initial recursion var
  * Return: 1 if prime, 0 otherwise

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0
+ * is_prime_number - returns 1 if the input integer is a prime number, 
  * @n: a prime number
  * @i: initial recursion var
  * Return: 1 if prime, 0 otherwise
@@ -21,7 +21,7 @@ int is_prime_number_fact(int n, int i)
 
 /**
  * is_prime_number - identifies if n is a prime number
- * @n: a prime number 
+ * @n: a prime number
  * Return: 1 if prime, 0 otherwise
  */
 int is_prime_number(int n)
@@ -31,4 +31,4 @@ int is_prime_number(int n)
 		return (0);
 	}
 	return (is_prime_number_fact(n, 2));
- }
+}

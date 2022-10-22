@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  *main - print the name of the executable that this program is run from
  * @argc:argc

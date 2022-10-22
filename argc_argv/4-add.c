@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 			if (argv[i][k] < '0' || argv[i][k] > '9')
 			{
 				printf("Error\n");
-				return(1);
+				return (1);
 			}
 			k = k + 1;
 		}

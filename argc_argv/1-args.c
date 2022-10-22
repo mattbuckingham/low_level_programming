@@ -7,7 +7,7 @@
  * Return: zero
  */
 
-int main (argc, argv)
+int main (int argc, char *argv)
 {
 	if (argv == 1)
 	{

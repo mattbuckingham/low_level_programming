@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  *main - print the product of two nunbers
@@ -13,6 +14,6 @@ int main(int argc, char *argv[])
 	{
 		argc = 1;
 	}
-	printf("%s\n", (argv[1]) * argv[2]));
+	printf("%s\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }

@@ -11,6 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int i;
+	int k;
+	int r;
 
 	i = 0;
 
@@ -32,11 +34,11 @@ int main(int argc, char *argv[])
 
 	/*addition*/
 	i = 0;
-	k = 0;
+	r = 0;
 	while (i < argc)
 	{
-		k = k + atoi(argv[i]);
+		r = r + atoi(argv[i]);
 	}
-	printf("%d\n", k);
+	printf("%d\n", r);
 	return (0);
 }

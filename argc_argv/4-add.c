@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int k;
 	int r;
 
-	i = 0;
+	i = 1;
 
 	/*error checking - checking for a non-digit char*/
 	while (i < argc)
@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 	while (i < argc)
 	{
 		r = r + atoi(argv[i]);
+		i = i + 1;
 	}
 	printf("%d\n", r);
 	return (0);

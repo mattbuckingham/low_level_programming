@@ -10,11 +10,11 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int i;
+	unsigned int i;
 	char *arr;
 
 	/*error check, I think I can just check the value that malloc(0) returnns tho*/
-	if (size <= 0)s
+	if (size <= 0)
 	{
 		return (NULL);
 	}

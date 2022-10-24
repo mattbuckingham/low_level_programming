@@ -13,19 +13,19 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 	char *arr;
 
-	/*error check, I think I can just check the value that malloc(0) returnns tho*/
+	i = 0;
+	/*check that the value of size is valid*/
 	if (size <= 0)
 	{
 		return (NULL);
 	}
 
 	arr = malloc(size * 1);
-
+	/*check is malloc call was successful */
 	if (arr == 0)
 	{
 		return (NULL);
 	}
-
 	while (i < size)
 	{
 		arr[i] = c;

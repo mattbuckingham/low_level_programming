@@ -33,13 +33,13 @@ char *_strdup(char *str)
 
 	i = 0;
 /*I'm not sure that this works*/
-	if (*str == '\0')
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	len = _strlen(str);
-	str_dup = malloc(len * 1);
+	len = (_strlen(str)) + 1;
+	str_dup = malloc(len * sizeof(*str_dup));
 
 /*check is malloc call was successful */
 	if (str_dup == 0)
@@ -50,6 +50,7 @@ char *_strdup(char *str)
 	while (i < len)
 	{
 		str_dup[i] = str[i];
+		i = i + 1;
 	}
 	return (str_dup);
 }

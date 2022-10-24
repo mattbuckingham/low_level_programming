@@ -21,7 +21,7 @@ int _strlen(char *s)
 }
 
 /**
- * strdup - duplicates a string
+ * _strdup - duplicates a string
  * @str: a string to be duplicated
  * Return: a pointer to the duplicated string
  */

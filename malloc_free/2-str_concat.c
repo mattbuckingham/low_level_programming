@@ -20,10 +20,10 @@ int _strlen(char *s)
 }
 
 /**
- *
- *
- *
- *
+ * str_concat - 
+ * @s1: a string
+ * @s2: a string
+ * Returns - a pointer to  the concatenated string
  */
 char *str_concat(char *s1, char *s2)
 {

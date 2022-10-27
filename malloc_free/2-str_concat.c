@@ -20,7 +20,7 @@ int _strlen(char *s)
 }
 
 /**
- * str_concat - 
+ * str_concat - a function that concatenates two strings
  * @s1: a string
  * @s2: a string
  * Returns - a pointer to  the concatenated string
@@ -59,7 +59,6 @@ char *str_concat(char *s1, char *s2)
 			str_cat[i] = s2[(i - _strlen(s1))];
 		}
 		i = i + 1;
-		printf ("%c\n", str_cat[i]);
 	}
 	/*insert nullchar to terminate string*/
 	str_cat[len - 1] = '\0';

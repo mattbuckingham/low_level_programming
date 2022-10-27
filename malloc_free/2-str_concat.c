@@ -46,8 +46,7 @@ char *str_concat(char *s1, char *s2)
 	str_cat = (char *)malloc(sizeof(str_cat) * len);
 
 	i = 0;
-	putchar(len);
-
+	
 	while (i < (len - 1))
 	{
 		if (i < _strlen(s1))

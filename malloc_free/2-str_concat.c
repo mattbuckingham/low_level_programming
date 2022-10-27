@@ -10,6 +10,10 @@ int _strlen(char *s)
 {
 	int i;
 
+	if (s == NULL)
+	{
+		return(0);
+	}
 	i = 0;
 	while (*s != '\0')
 	{
@@ -23,7 +27,7 @@ int _strlen(char *s)
  * str_concat - a function that concatenates two strings
  * @s1: a string
  * @s2: a string
- * Returns: a pointer to  the concatenated string
+ * Return: a pointer to the concatenated string
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -46,7 +50,7 @@ char *str_concat(char *s1, char *s2)
 	str_cat = (char *)malloc(sizeof(str_cat) * len);
 
 	i = 0;
-	
+
 	while (i < (len - 1))
 	{
 		if (i < _strlen(s1))

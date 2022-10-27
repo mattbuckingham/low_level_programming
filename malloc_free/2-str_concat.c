@@ -46,9 +46,7 @@ char *str_concat(char *s1, char *s2)
 		len = len + _strlen(s2);
 	}
 
-	/*allocate an adequate amount om memory*/
-	/*str_cat = malloc(sizeof(str_cat) * (len - 1));*/
-	str_cat = malloc(len - 1);
+	str_cat = malloc(len);
 	if (str_cat == NULL)
 	{
 		free(str_cat);

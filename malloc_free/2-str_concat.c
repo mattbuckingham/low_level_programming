@@ -12,7 +12,7 @@ int _strlen(char *s)
 
 	if (s == NULL)
 	{
-		return(0);
+		return (0);
 	}
 	i = 0;
 	while (*s != '\0')
@@ -47,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	/*allocate an adequate amount om memory*/
-	str_cat = (char *)malloc(sizeof(str_cat) * len);
+	str_cat = (char *)malloc(sizeof(str_cat) * (len -1));
 
 	i = 0;
 

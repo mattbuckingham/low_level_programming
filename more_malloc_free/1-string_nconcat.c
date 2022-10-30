@@ -7,9 +7,9 @@
  * @
  * Return: void
  */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int c;
+	unsigned int c;
 
 	c = 0;
 	if (*s != '\0')
@@ -34,9 +34,9 @@ int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int len;
-	int s1len;
-	int i;
+	unsigned int len;
+	unsigned int s1len;
+	unsigned int i;
 
 	if (s1 == NULL)
 	{

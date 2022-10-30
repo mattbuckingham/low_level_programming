@@ -1,6 +1,6 @@
 #ifndef FUNC_MAC
 #define FUNC_MAC
 
-#define ABS(X) (X * ((X < 0) * (-1) + (X > 0)))
+#define ABS(x) (x * ((x < 0) * (-1) + (x> 0)))
 
 #endif /* FUNC_MAC */

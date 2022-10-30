@@ -14,7 +14,7 @@ int _strlen(char *s)
 	c = 0;
 	if (*s != '\0')
 	{
-		c = 1 + _strlen_recursion(s + 1);
+		c = 1 + _strlen(s + 1);
 		return (c);
 	}
 	else
@@ -36,18 +36,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	int len;
 	int s1len;
-	int i, k;
+	int i;
 
 	if (s1 == NULL)
 	{
-		s1 = "":
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
 		s2 = "";
 	}
 
-	len = _strlen(s1) + _strlen(s2);
+	len = _strlen(s1) + n;
 	str = malloc(sizeof(str) * len + 1);
 	if (str == NULL)
 	{
@@ -55,6 +55,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	s1len = _strlen(s1);
+	
 	while (i < (len - 1))
 	{
 		if (i < _strlen(s1))

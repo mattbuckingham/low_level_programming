@@ -3,15 +3,23 @@
 #include "dog.h"
 
 /**
- * init_dog
- * @d
- * @name
- * @age
- * @owner
+ * init_dog - initialize a variable of type struct dog
+ * @d: pointer to the struct
+ * @name: dog name
+ * @age: dog age
+ * @owner: owner name
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	if ( d == NULL)
+	{
+		d = malloc(sizeof(struct dog));
+		if (d == NULL)
+		{
+			return (NULL);
+		}
+	}
 	(*d).name = name;
 	(*d).age = age;
 	(*d).owner = owner;

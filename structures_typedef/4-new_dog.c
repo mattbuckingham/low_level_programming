@@ -22,35 +22,35 @@ int _strlen(char *s)
 }
 
 /**
- * new_dog -
- * @name: 
- * @age:
- * @owner:
+ * new_dog - function that creates a new dog.
+ * @name: the dog's name
+ * @age: the dog's age
+ * @owner: the dog's owner
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t doggo;
 	int i;
-	
-	doggo = malloc(sizeof(doggo));
-	if (d1 == NULL)
+
+	doggo = malloc(sizeof(dog_t));
+	if (doggo == NULL)
 	{
 		return (NULL);
 	}
 
-	doggo->name = malloc(_strlen(name) * sizeof(doggo->name));
+	doggo->name = malloc((_strlen(name) + 1) * sizeof(char));
 	if (doggo->name == NULL)
 	{
 		free(doggo);
 		return (NULL);
 	}
-	doggo->owner = malloc(_strlen(owner) * sizeof(doggo->owner));
+	doggo->owner = malloc((_strlen(owner) + 1) * sizeof(char));
 	if (doggo->owner == NULL)
 	{
 		free(doggo);
 		return (NULL);
 	}
-
+	//STRDUP
 	while (i <= _strlen(name))
 	{
 		doggo->name[i] = name[i];

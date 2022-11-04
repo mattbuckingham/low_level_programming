@@ -26,6 +26,7 @@ int _strlen(char *s)
  * @name: the dog's name
  * @age: the dog's age
  * @owner: the dog's owner
+ * Return: a new dog
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -51,7 +52,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(doggo);
 		return (NULL);
 	}
-	
+
 	while (i <= _strlen(name))
 	{
 		doggo->name[i] = name[i];

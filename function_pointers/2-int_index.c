@@ -26,8 +26,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 			if (cmp(array[i]) != 0)
 			{
 				return (i);
-				i = i + 1;
 			}
+			i = i + 1;
 		}
 	}
 	return (-1);

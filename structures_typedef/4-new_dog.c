@@ -52,7 +52,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(doggo);
 		return (NULL);
 	}
-
+	i = 0;
 	while (i <= _strlen(name))
 	{
 		doggo->name[i] = name[i];

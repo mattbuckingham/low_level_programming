@@ -11,13 +11,14 @@ void print_all(const char * const format, ...)
 {
 	va_list all;
 	int i;
-	char *str;
+	char *str, plc; 
 
 	va_start(all, format);
 
-	while (format != NULL && format[i] != NULL )
+	while (format != NULL && *format[i] != NULL )
 	{
-		if(format[i] == 'c')
+		str = ", ";
+		if (format[i] == 'c')
 		{
 			printf("%c%s", va_arg(all, int), str);
 		}
@@ -31,14 +32,16 @@ void print_all(const char * const format, ...)
 		}
 		else if (format[i] == 's')
 		{
-			if (va_arg(all, char *) == NULL)
+			plc = va_arg(all, char *);
+
+			if (plc == NULL)
 			{
-				va_arg(all, char *) = "(nil)";
+				plc = "(nil)";
 			}
-			printf("%s%s", va_arg(all, char *), str);
+			printf("%s%s", plc, str);
 		}
 		i = i + 1;
 	}
 	printf("\n");
-	va_end(valist);
+	va_end(all);
 }

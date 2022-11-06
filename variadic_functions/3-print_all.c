@@ -11,11 +11,12 @@ void print_all(const char * const format, ...)
 {
 	va_list all;
 	int i;
-	char *str, plc; 
+	char *str;
+	char plc; 
 
 	va_start(all, format);
 
-	while (format != NULL && *format[i] != NULL )
+	while (format != NULL && format[i] != NULL )
 	{
 		str = ", ";
 		if (format[i] == 'c')

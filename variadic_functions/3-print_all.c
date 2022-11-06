@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 
 	va_start(all, format);
 
-	while (format != NULL && format[i] != NULL )
+	while (format != NULL && format[i])
 	{
 		str = ", ";
 		if (format[i] == 'c')

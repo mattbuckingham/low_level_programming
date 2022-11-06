@@ -4,7 +4,7 @@
 
 /**
  * print_char - print a char
- * @n:char to be printed
+ * @all: char to be printed
  * Return: 0 at all times
  */
 int print_char(va_list all)
@@ -15,7 +15,7 @@ int print_char(va_list all)
 
 /**
  * print_integer - print an int
- * @n: int to be printed
+ * @all: int to be printed
  * Return: 0 at all times
  */
 int print_integer(va_list all)
@@ -26,7 +26,7 @@ int print_integer(va_list all)
 
 /**
  * print_float - print a float
- * @n: float to be printed
+ * @all: float to be printed
  * Return: 0 at all times
  */
 int print_float(va_list all)
@@ -36,8 +36,8 @@ int print_float(va_list all)
 }
 
 /**
- * print_str - print a string
- * @n:string to be printed
+ * print_string - print a string
+ * @all:string to be printed
  * Return: 0 at all times
  */
 int print_string(va_list all)
@@ -77,16 +77,17 @@ void print_all(const char * const format, ...)
 
 	while (format != NULL && format[i])
 	{
-		printf("%s", sp);
-		sp = ", ";
+		
 		k = 0;
 		while (pri[k].f != NULL)
 		{
 			if (format[i] == *pri[k].c)
 			{
+				printf("%s", sp);
+				sp = ", ";
 				pri[k].f(all);
 			}
-		        k = k + 1;
+			k = k + 1;
 		}
 		i = i + 1;
 	}

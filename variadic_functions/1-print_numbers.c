@@ -6,7 +6,7 @@
  * print_numbers - unction that prints numbers, followed by a new line.
  * @separator: a string to be used to separate the numbers
  * @n: the number of intergers passed to the function
- * 
+ *
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -26,7 +26,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		i = i + 1;
 	}
 
-	printf ("\n");
+	printf("\n");
 
 	va_end(numbers);
 }

@@ -50,7 +50,7 @@ int op_div(int a, int b)
  * op_mod - returns the modulus of two numbers
  * @a: number
  * @b: number
- * Return - the result of a % b
+ * Return: the result of a % b
 */
 int op_mod(int a, int b)
 {

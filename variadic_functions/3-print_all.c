@@ -10,7 +10,7 @@
 int print_char(va_list all)
 {
 	printf("%c", va_arg(all, int));
-	return 0;
+	return (0);
 }
 
 /**
@@ -21,7 +21,7 @@ int print_char(va_list all)
 int print_integer(va_list all)
 {
 	printf("%d", va_arg(all, int));
-	return 0;
+	return (0);
 }
 
 /**
@@ -32,7 +32,7 @@ int print_integer(va_list all)
 int print_float(va_list all)
 {
 	printf("%f", va_arg(all, double));
-	return 0;
+	return (0);
 }
 
 /**
@@ -43,6 +43,7 @@ int print_float(va_list all)
 int print_string(va_list all)
 {
 	char *plc;
+
 	plc = va_arg(all, char *);
 
 	if (plc == NULL)
@@ -50,7 +51,7 @@ int print_string(va_list all)
 		plc = "(nil)";
 	}
 	printf("%s", plc);
-	return 0;
+	return (0);
 }
 
 /**
@@ -76,6 +77,8 @@ void print_all(const char * const format, ...)
 
 	while (format != NULL && format[i])
 	{
+		printf("%s", sp);
+		sp = ", ";
 		k = 0;
 		while (pri[k].f != NULL)
 		{
@@ -85,8 +88,6 @@ void print_all(const char * const format, ...)
 			}
 		        k = k + 1;
 		}
-		printf("%s", sp);
-		sp = ", ";
 		i = i + 1;
 	}
 

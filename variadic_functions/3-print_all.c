@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 		}
 		else if (format[i] == 's')
 		{
-			plc = va_arg(all, char *);
+			plc = *va_arg(all, char *);
 
 			if (plc == NULL)
 			{

@@ -83,10 +83,8 @@ void print_all(const char * const format, ...)
 			}
 		        k = k + 1;
 		}
-		if (i != 0)
-		{
-			printf(", ");
-		}
+		printf(", ");
+
 		i = i + 1;
 	}
 

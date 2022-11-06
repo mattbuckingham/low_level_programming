@@ -77,7 +77,6 @@ void print_all(const char * const format, ...)
 
 	while (format != NULL && format[i])
 	{
-		
 		k = 0;
 		while (pri[k].f != NULL)
 		{

@@ -62,6 +62,7 @@ void print_all(const char * const format, ...)
 {
 	va_list all;
 	int i, k;
+	char *sp;
 	sel pri[] = {
 		{"c", print_char},
 		{"i", print_integer},
@@ -71,6 +72,7 @@ void print_all(const char * const format, ...)
 	};
 	va_start(all, format);
 	i = 0;
+	sp = "";
 
 	while (format != NULL && format[i])
 	{
@@ -83,8 +85,8 @@ void print_all(const char * const format, ...)
 			}
 		        k = k + 1;
 		}
-		printf(", ");
-
+		printf("%s", sp);
+		sp = ", ";
 		i = i + 1;
 	}
 

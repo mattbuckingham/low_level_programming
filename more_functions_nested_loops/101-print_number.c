@@ -8,23 +8,21 @@
 */
 void print_number(int n)
 {
-	int neg;
+
 
 	neg = 0;
 	if (n < 0)
 	{
 		_putchar('-');
 		n = n * -1;
-		neg = 1;
 	}
 	if (n == 0)
 	{
 		_putchar('0');
-		count = 1;
 	}
 	else
 	{
-		count = print_s(n, 0) + neg;
+		print_s(n, 0);
 	}
 }
 

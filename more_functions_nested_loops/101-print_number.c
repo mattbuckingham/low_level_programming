@@ -8,9 +8,8 @@
 */
 void print_number(int n)
 {
-	int count, neg;
+	int neg;
 
-	count = 0;
 	neg = 0;
 	if (n < 0)
 	{

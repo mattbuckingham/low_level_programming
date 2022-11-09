@@ -8,36 +8,44 @@
 */
 void print_number(int n)
 {
-	int p, mag;
+	int count, neg;
 
+	count = 0;
+	neg = 0;
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		n = n * -1;
+		neg = 1;
 	}
-
 	if (n == 0)
 	{
 		_putchar('0');
+		count = 1;
 	}
-
-	while (n != 0)
+	else
 	{
-		mag = 0;
-		p = n;
-		while (p >= 10)
-		{
-			p = p / 10;
-			mag = mag + 1;
-		}
-		_putchar('0' + p);
-		if (n > 9)
-		{
-		n = n - (p * (10 * mag));
-		}
-		else
-		{
-			n = 0;
-		}
+		count = print_s(n, 0) + neg;
+	}
+}
+
+
+/**
+ * print_s - takes an interger and prints to stdout
+ * @n: number to be printed
+ * @count: a count of chars printed
+ * Return: the quantity of chars printed
+*/
+int print_s(int n, int count)
+{
+	if (n != 0)
+	{
+		count = 1 + print_s((n / 10), 0);
+		_putchar('0' + (n % 10));
+		return (count);
+	}
+	else
+	{
+		return (count);
 	}
 }

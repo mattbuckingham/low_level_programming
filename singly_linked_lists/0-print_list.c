@@ -5,7 +5,7 @@
 /**
  * print_list - that prints all the elements of a list_t list.
  * @h: pointer to a list_t
- * Return - count of nodes printed
+ * Return: count of nodes printed
 */
 size_t print_list(const list_t *h)
 {

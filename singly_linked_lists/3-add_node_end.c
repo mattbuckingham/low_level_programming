@@ -43,17 +43,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	if (*head == NULL)
-	{
-		return (NULL);
-	}
-
-	rehead = *head;
-	while (rehead->next != NULL)
-	{
-		rehead = rehead->next;
-	}
-	puts("we made it only here");
+	addition->len = _strlen((char *)str);
+	addition->next = NULL;
 	addition->str = strdup((char *)str);
 	if (addition->str == NULL)
 	{
@@ -61,10 +52,18 @@ list_t *add_node_end(list_t **head, const char *str)
 		return(NULL);
 	}
 
-	puts("we made it here");
-	addition->len = _strlen((char *)str);
-	addition->next = NULL;
+	if (*head == NULL)
+	{
+		*head = addition;
+		return (addition);
+	}
+
+	rehead = *head;
+	while (rehead->next != NULL)
+	{
+		rehead = rehead->next;
+	}
 	rehead->next = addition;
-	
+
 	return (rehead);
 }

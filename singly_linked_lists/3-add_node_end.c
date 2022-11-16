@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
@@ -33,10 +34,16 @@ unsigned int _strlen(char *s)
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *addition = malloc(sizeof(list_t));
+	list_t *addition;
 	list_t *rehead;
 
+	addition = malloc(sizeof(list_t));
 	if (addition == NULL)
+	{
+		return (NULL);
+	}
+
+	if (*head == NULL)
 	{
 		return (NULL);
 	}
@@ -46,11 +53,18 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		rehead = rehead->next;
 	}
-	rehead->next = addition;
-
+	puts("we made it only here");
 	addition->str = strdup((char *)str);
+	if (addition->str == NULL)
+	{
+		free(addition);
+		return(NULL);
+	}
+
+	puts("we made it here");
 	addition->len = _strlen((char *)str);
 	addition->next = NULL;
-
+	rehead->next = addition;
+	
 	return (rehead);
 }

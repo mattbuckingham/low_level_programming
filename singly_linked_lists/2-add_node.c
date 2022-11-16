@@ -1,5 +1,4 @@
-
-1;4000;21c#include <string.h>
+#include <string.h>
 #include <stdlib.h>
 #include "lists.h"
 

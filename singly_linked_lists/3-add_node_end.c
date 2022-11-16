@@ -42,9 +42,9 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	while (* head != NULL)
 	{
-		**head = head->next;
+		*head = *head->next;
 	}
-	**head->next = addition;
+	*head->next = addition;
 
 	addition->str = strdup((char *)str);
 	addition->len = _strlen((char *)str);

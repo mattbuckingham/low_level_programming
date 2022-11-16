@@ -34,21 +34,23 @@ unsigned int _strlen(char *s)
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *addition = malloc(sizeof(list_t));
+	list_t *rehead;
 
 	if (addition == NULL)
 	{
 		return (NULL);
 	}
 
-	while (* head != NULL)
+	rehead = *head;
+	while (rehead->next != NULL)
 	{
-		*head = *head->next;
+		rehead = rehead->next;
 	}
-	*head->next = addition;
+	rehead->next = addition;
 
 	addition->str = strdup((char *)str);
 	addition->len = _strlen((char *)str);
 	addition->next = NULL;
-	
-	return (addition);
+
+	return (rehead);
 }

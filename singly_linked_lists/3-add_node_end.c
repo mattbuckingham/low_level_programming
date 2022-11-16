@@ -44,12 +44,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		head = head->next;
 	}
-	head->next = addition;
+	*head->next = addition;
 
 	addition->str = strdup((char *)str);
 	addition->len = _strlen((char *)str);
 	addition->next = NULL;
-	//head[i] = addition;
-
+	
 	return (addition);
 }

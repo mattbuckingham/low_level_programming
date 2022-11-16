@@ -49,7 +49,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (addition->str == NULL)
 	{
 		free(addition);
-		return(NULL);
+		return (NULL);
 	}
 
 	if (*head == NULL)

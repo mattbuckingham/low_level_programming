@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * print_list - that prints all the elements of a list_t list. 
+ * print_list - that prints all the elements of a list_t list.
  * @h: pointer to a list_t
  * Return - count of nodes printed
 */
@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 	size_t i;
 
 	i = 0;
-	while(h != NULL)
+	while (h != NULL)
 	{
 		if (h->str == NULL)
 		{

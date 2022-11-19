@@ -3,12 +3,12 @@
 #include "lists.h"
 
 /**
- * add_nodeint - adds a new node at the beginning of a listint_t list.
+ * add_nodeint_end - adds a new node at the end of a listint_t list.
  * @head: pointer to the first element of the current list
  * @n: int to be stored in the node being added
- * Return: a pointer to the new node at the start of the list
+ * Return: a pointer to the new node at the end of the list
 */
-listint_t *add_nodeint(listint_t **head, const int n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new_node;
 

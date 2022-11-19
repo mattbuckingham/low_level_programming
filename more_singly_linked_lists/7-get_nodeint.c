@@ -8,7 +8,7 @@
  * @index: the index of the node to be returned
  * Return: the node at index of the linked list
 */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i;
 

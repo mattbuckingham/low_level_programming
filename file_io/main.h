@@ -2,7 +2,7 @@
 #define _MAIN_H_
 
 #include <stdio.h>
-#include <stdlid.h>
+#include <stdlib.h>
 #include <sys/types>
 #include <sys/stat.h>
 #include <fnctl.h>

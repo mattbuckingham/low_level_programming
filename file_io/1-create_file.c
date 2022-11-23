@@ -22,8 +22,9 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC);
-	if (fd == NULL)
+	if (fd == )
 	{
+		close(fd);
 		return (-1);
 	}
 	wr = write (fd, text_content, strlen(text_content));

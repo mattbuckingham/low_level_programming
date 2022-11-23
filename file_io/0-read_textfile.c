@@ -18,7 +18,7 @@
 		 return (0);
 	 }
 
-	 buffer = malloc(sizeof((*buffer) * letters);
+	 buffer = malloc(sizeof(*buffer) * letters);
 
 	 if (buffer == NULL)
 	 {

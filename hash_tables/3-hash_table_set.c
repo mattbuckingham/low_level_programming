@@ -4,7 +4,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set -adds an element to the hash table. 
+ * hash_table_set -adds an element to the hash table.
  * @ht: The hashh table
  * @key: the key to use
  * @value: the value to be stored

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+1;4000;21c#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -8,7 +8,7 @@
  * @letters: th enumber of actual letters to print form the file
  * Return: number of letters printed
 */
- ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	 char *buffer;
 	 int fd, rd, wr;

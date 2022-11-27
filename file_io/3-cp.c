@@ -6,6 +6,7 @@
  * main - copies a file
  * @argc: count of args
  * @argv: arr of args
+ * Return: count of chars printed
 */
 int main(int argc, char *argv[])
 {
@@ -18,7 +19,8 @@ int main(int argc, char *argv[])
 	}
 	if (argv[1] == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
 	f1 = open(argv[1], O_RDONLY);
 	if (f1 == -1)
@@ -36,6 +38,6 @@ int main(int argc, char *argv[])
 	if (i == -1)
 		exit(99);
 	close(f1);
-	close (f2);
+	close(f2);
 	return (i2);
 }

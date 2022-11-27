@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 	f1 = open(argv[1], O_RDONLY);
-	if (f1 = -1)
+	if (f1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	if (f2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	i2 = read(f1, buff, 1024);
-	i = write(f2, buff, i2read(f1, buff, 1024));
+	i = write(f2, buff, i2);
 	if (i = -1)
 		exit(99);
 	close(f1);

@@ -27,6 +27,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ht->array[index] = addition;
 		return (1);
 	}
+
+	while (addition != NULL)
+	{
+		if (strcmp(addition->key, key) == 0)
+		{
+			free(addition->value);
+			addition->value = strdup(value);
+		}
+		addition = addition->next;
+	}
+
 	return (1);
 }
 

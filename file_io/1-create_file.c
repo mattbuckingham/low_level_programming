@@ -3,9 +3,10 @@
 #include "main.h"
 
 /**
- * create_file - 
- *
- *
+ * create_file - creates a file
+ * @filename: name of the file
+ * @text_content: contents of the file
+ * Return: 1 on success, -1 on failure
 */
 int create_file(const char *filename, char *text_content)
 {
@@ -34,10 +35,10 @@ int create_file(const char *filename, char *text_content)
 	wr = write(fd, text_content, strlen(text_content));
 	if (wr == -1)
 	{
-		close (fd);
+		close(fd);
 		return (1);
 	}
-	close (fd);
+	close(fd);
 	return (1);
 }
 

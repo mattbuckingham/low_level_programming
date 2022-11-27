@@ -15,8 +15,23 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *addition;
 
+	if (ht == NULL || key == NULL || value == NULL)
+	{
+		return (0);
+	}
+
 	index = key_index((const unsigned char *)key, ht->size);
 	addition = ht->array[index];
+
+	while (addition != NULL)
+	{
+		if (strcmp(addition->key, key) == 0)
+		{
+			free(addition->value);
+			addition->value = strdup(value);
+		}
+		addition = addition->next;
+	}
 
 	if (addition == NULL)
 	{
@@ -28,15 +43,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (1);
 	}
 
-	while (addition != NULL)
-	{
-		if (strcmp(addition->key, key) == 0)
-		{
-			free(addition->value);
-			addition->value = strdup(value);
-		}
-		addition = addition->next;
-	}
+
 
 	return (1);
 }

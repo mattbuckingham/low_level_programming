@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	i2 = read(f1, buff, 1024);
 	i = write(f2, buff, i2);
-	if (i = -1)
+	if (i == -1)
 		exit(99);
 	close(f1);
 	close (f2);

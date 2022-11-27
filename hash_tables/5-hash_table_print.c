@@ -3,7 +3,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print
+ * hash_table_print - function that prints a hash table.
  * @ht: pointer to a hash table to be printed
  *
 */
@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 	while (i < ht->size)
 	{
 		data = ht->array[i];
-		if (data != NULL)
+		while (data != NULL)
 		{
 			if (st == 1)
 
@@ -31,6 +31,7 @@ void hash_table_print(const hash_table_t *ht)
 				printf("'%s': '%s'", data->key, data->value);
 				st = 1;
 			}
+			data = data->next;
 		}
 		i = i + 1;
 	}

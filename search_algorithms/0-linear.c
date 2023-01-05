@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * linear-search - searches for a value in an array of integers
+ * linear_search - searches for a value in an array of integers
  * @array: an array to be searched
  * @size: the size of the array
  * @value: a value to be found
@@ -24,6 +24,7 @@ int linear_search(int *array, size_t size, int value)
 	}
 	else
 	{
+		printf("Value checked array[%d] = [%d]\n", (int)i, (int)array[i]);
 		return (i);
 	}
 }

@@ -26,7 +26,7 @@ int binary_search(int *array, size_t size, int value)
 
 		while (i < high)
 		{
-			printf("%d ,", array[i]);
+			printf("%d, ", array[i]);
 			i = i + 1;
 		}
 		printf("%d\n", array[i]);
@@ -44,7 +44,7 @@ int binary_search(int *array, size_t size, int value)
 		}
 		else
 		{
-			high = place + 1;
+			high = place - 1;
 		}
 	}
 	return (-1);
